@@ -9,16 +9,16 @@
 </head>
 <body>
 <form action="<?php print(_APP_URL);?>/app/calc.php" method="post">
-    <label id="id_credits">Proszę podać kwotę kredytu:</label>
+    <label>Proszę podać kwotę kredytu:</label>
     <input type="text" name="credits" value="<?php if(isset($credits)) echo $credits?>"></input>
     </br>
-    <label id="id_years">Prosze podać na ile lat:</label>
+    <label>Prosze podać na ile lat:</label>
     <input type="text" name="years" value="<?php if(isset($years)) echo $years?>"></input>
     </br>
-    <label id="id_percent">Proszę podać oprocentowanie kredytu (z '.' w przypadku oprocentowania po przecinku, np. (8.5)):</label>
+    <label>Proszę podać oprocentowanie kredytu (z '.' w przypadku oprocentowania po przecinku, np. (8.5)):</label>
     <input type="text" name="percent" value="<?php if(isset($percentage)) echo $percentage?>"></input>
     </br>
-    <input type="submit" id="submit" value="Oblicz!"></input>
+    <input type="submit" value="Oblicz!"></input>
 </form>
 <?php
 if(isset($messages)){
